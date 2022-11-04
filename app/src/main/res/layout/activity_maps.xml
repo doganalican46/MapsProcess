@@ -1,0 +1,72 @@
+
+<RelativeLayout xmlns:Android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    Android:layout_width="match_parent"
+    Android:layout_height="match_parent">
+
+    <LinearLayout
+        Android:layout_width="match_parent"
+        Android:layout_height="wrap_content"
+        Android:orientation="horizontal"
+        Android:id="@+id/lineer"
+        Android:layout_alignParentTop="true"
+        Android:layout_alignParentLeft="true">
+
+
+        <EditText
+            Android:layout_width="match_parent"
+            Android:layout_height="wrap_content"
+            Android:id="@+id/location"
+            Android:layout_weight="1">
+
+        </EditText>
+
+        <Button
+            Android:layout_width="wrap_content"
+            Android:layout_height="wrap_content"
+            Android:text="FIND"
+            Android:id="@+id/btn_find">
+
+        </Button>
+
+    </LinearLayout>
+
+    <Button
+        Android:layout_width="wrap_content"
+        Android:layout_height="wrap_content"
+        Android:layout_alignParentStart="true"
+        Android:layout_alignParentBottom="true"
+        Android:id="@+id/btn_uydu"
+        Android:text="uydu"
+        >
+
+    </Button>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        tools:context=".MapsActivity"
+        android:layout_below="@+id/lineer"
+        android:layout_marginTop="0dp"/>
+
+    <ZoomControls
+        Android:layout_width="wrap_content"
+        Android:layout_height="wrap_content"
+        Android:layout_alignParentEnd="true"
+        Android:layout_alignParentBottom="true"
+        Android:id="@+id/zoom">
+
+    </ZoomControls>
+
+</RelativeLayout>
+
+
+
+    
+    
+    
